@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="shortcut icon"
+          href="/resources/logo.png"
+          type="image/x-icon">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'><link rel="stylesheet" href="/css/site.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script  src="/js/values.js"></script>
+    <script  src="/js/site.js"></script>
+</head>
+<body>
+<a href="https://www.mekashron.com/ru/" class="logo" target="_blank">
+    <h2>Mekashron</h2>
+</a>
+
+<div class="section">
+    <div class="container">
+        <div class="row full-height justify-content-center">
+            <div class="col-12 text-center align-self-center py-5">
+                <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                    <h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
+                    <input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
+                    <label for="reg-log"></label>
+                    <div class="card-3d-wrap mx-auto">
+                        <div class="card-3d-wrapper">
+                            <div class="card-front">
+                                <div class="center-wrap">
+                                    <form id="logInForm" class="section text-center">
+                                        <h4 class="mb-4 pb-3">Log In</h4>
+                                        <div class="form-group">
+                                            <input required type="email" name="UserName" class="form-style" placeholder="Your Email" id="loginLogin" autocomplete="off">
+                                            <i class="input-icon uil uil-at"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input required type="password" name="Password" class="form-style" placeholder="Your Password" id="loginPassword" autocomplete="off">
+                                            <i class="input-icon uil uil-lock-alt"></i>
+                                        </div>
+                                        <button type="submit" id="logInBut" class="btn mt-4">Log In</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <div class="center-wrap">
+                                    <form id="signUpForm" class="section text-center">
+                                        <h4 class="mb-4 pb-3">Sign Up</h4>
+                                        <div class="form-group">
+                                            <input required type="text" name="FullName" class="form-style" placeholder="Your Full Name" id="signupName" autocomplete="off">
+                                            <i class="input-icon uil uil-user"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input required type="text" name="Mobile" class="form-style" placeholder="Your Phone" id="signupMobile" autocomplete="off">
+                                            <i class="input-icon uil uil-calling"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input required type="email" name="Email" class="form-style" placeholder="Your Email" id="signupLogin" autocomplete="off">
+                                            <i class="input-icon uil uil-at"></i>
+                                        </div>
+                                        <div class="form-group mt-2">
+                                            <input required type="password" name="Password" class="form-style" placeholder="Your Password" id="signupPassword" autocomplete="off">
+                                            <i class="input-icon uil uil-lock-alt"></i>
+                                        </div>
+                                        <button type="submit" id="signUpBut" class="btn mt-4">Sign Up</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="resultModal" aria-hidden="true" style="display: none;">
+    <div id="modal" class="modal-dialog">
+        <div class="card">
+            <div class="card-title">
+                <p id="resultTitle"></p>
+            </div>
+            <div class="card-text">
+                <p id="resultMessage"></p>
+            </div> 
+            <button id="closeButton" class="btn">Close</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
